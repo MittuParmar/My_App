@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/raund_corner_background"
+    android:elevation="4dp">
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/productTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="Title"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productImage" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:drawableStart="@drawable/ic_shopping_cart_black_24dp"
+        android:text="Add to cart"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Rs.20/-"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productTitle" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="25/-"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/textView4" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:background="#B1F85E"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_subtract_circle_black_24dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="1 KG"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_add_circle_black_24dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/raund_corner_background"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="20% OFF"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
